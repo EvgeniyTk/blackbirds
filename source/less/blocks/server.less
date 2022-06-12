@@ -1,0 +1,59 @@
+.server {
+  width: 230px;
+  height: 80px;
+  display: flex;
+  border: 1px solid @orange;
+  position: relative;
+  &__image {
+    width: 220px;
+    height: 70px;
+    margin: auto;
+    opacity: 0.15;
+  }
+  &__text {
+    position: absolute;
+    display: flex;
+  }
+  &__name {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 11px 0 14px 10px;
+    & span {
+      font-weight: 900;
+      text-transform: uppercase;
+      color: @silver;
+    }
+    & p {
+      color: @grey;
+      font-weight: 300;
+    }
+  }
+  &__progress {
+    width: 160px;
+    height: 4px;
+    border: 0;
+    &[value]::-webkit-progress-value {
+      background-color: @orange;
+    }
+  }
+  &__value {
+    margin-top: 11px;
+    margin-left: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & span {
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 20px;
+      color: @grey;
+      margin-bottom: 8px;
+    }
+  }
+  &__clan-image {
+    width: 30px;
+    height: 30px;
+    background-color: @grey-opacity;
+    border-radius: 3px;
+  }
+}

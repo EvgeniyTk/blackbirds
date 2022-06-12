@@ -1,15 +1,83 @@
 .page-menu {
-  background-color: @background-nav;
+  width: 265px;
+  position: fixed;
+  top: 28px;
+  display: flex;
+  flex-direction: column;
+  &__menu {
+    background-color: @background-block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__logo {
+    margin: 26px auto 46px;
+  }
+  &__nav-list {
+    margin-left: 30px;
+    margin-bottom: 43px;
+  }
+  &__line {
+    background-color: @line;
+    width: 220px;
+    margin-left: 20px;
+    height: 1px;
+  }
   &__nav-item {
     margin-bottom: 21px;
-    & a{
-    color: @silver;
-    font-size: 16px;
-    line-height: 20px;
-    &:hover {
-      text-decoration: underline;
+    & a {
+      color: @silver;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      display: flex;
+      &:hover {
+        text-decoration: underline;
+      }
     }
+    & svg {
+      fill: @orange;
+      margin-right: 20px;
+    }
+  }
+  &__nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30px;
+    margin-top: 43px;
+    margin-bottom: 62px;
+  }
+    &__nav-link {
+      margin-bottom: 21px;
+      & a {
+        color: @silver;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      & svg {
+        fill: @orange;
+        margin-right: 20px;
+      }
+    }
+  &__socials {
+    margin-left: 30px;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    &-link {
+      margin-right: 18px;
+      color: @grey-dark;
+      font-size: 10px;
+      line-height: 12px;
+      & svg {
+        fill: @grey-dark;
+      }
     }
   }
 }
-
