@@ -1,0 +1,72 @@
+.forum {
+  width: 865px;
+  padding: 24px 29px;
+  margin: 0 auto;
+  background-color: @background-block;
+  &__top {
+    color: @silver;
+    &-header::before {
+      background-color: @silver;
+    }
+    &-header::after {
+      border-color: @silver;
+    }
+  }
+  &__button {
+    background-color: @grey-dark;
+    color: @grey;
+    &:hover {
+      background: @button-forum;
+    }
+  }
+  &__themes {
+    &-item {
+      margin-bottom: 22px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &-link {
+      display: flex;
+      color: @grey;
+      align-items: center;
+      width: 760px;
+      justify-content: space-between;
+    }
+  }
+  &__theme {
+    width: 520px;
+    background-color: @background-items;
+    height: 70px;
+    border-radius: 5px;
+    display: flex;
+    padding: 13px 17px;
+    align-items: center;
+    &-avatar {
+      min-width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 35px;
+      box-shadow: 0 0 0 2px @background-items, 0 0 0 3px @orange;
+    }
+    &-name {
+      color: @orange;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      margin-bottom: 6px;
+    }
+    &-description {
+      font-size: 10px;
+      line-height: 12px;
+    }
+    &-author {
+      font-weight: 700;
+    }
+    &-line {
+      border-right: 1px solid @line;
+      height: 48px;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 .page-menu {
   width: 265px;
-  position: fixed;
+  position: sticky;
   top: 28px;
   display: flex;
   flex-direction: column;
@@ -77,6 +77,12 @@
       line-height: 12px;
       & svg {
         fill: @grey-dark;
+      }
+      &:hover {
+        color: @grey;
+        & svg path:first-child{
+          fill: @grey;
+        }
       }
     }
   }

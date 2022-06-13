@@ -1,15 +1,18 @@
 .page-header {
+  width: 800px;
+  margin: 0 auto 35px;
   &__top {
-    margin-top: 28px;
-    margin-left: 35px;
+    margin-bottom:35px;
     display: flex;
     align-items: center;
+    min-width: 835px;
   }
   &__servers-list {
     display: flex;
     margin-right: 66px;
   }
-  &__servers-item {
+  &__servers-item:not(:last-child) {
     margin-right: 20px;
   }
+  
 }

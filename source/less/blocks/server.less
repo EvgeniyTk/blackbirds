@@ -2,13 +2,19 @@
   width: 230px;
   height: 80px;
   display: flex;
-  border: 1px solid @orange;
+  border: 1px solid rgba(248, 178, 96, 0.15);
   position: relative;
+  &:hover {
+    border: 1px solid @orange;
+    .server__image {
+      filter: opacity(0.25);
+    }
+  }
   &__image {
     width: 220px;
     height: 70px;
     margin: auto;
-    opacity: 0.15;
+    filter: opacity(0.15);
   }
   &__text {
     position: absolute;
