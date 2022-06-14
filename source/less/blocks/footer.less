@@ -2,4 +2,47 @@
   margin: 0 auto;
   max-width: 1200px;
   padding: 0 25px;
+  &__top-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  &__nav-list {
+    display: flex;
+  }
+  &__nav-item:not(:last-child) {
+    margin-right: 50px; 
+  }
+  &__nav-link {
+      color: @grey;
+      opacity: 0.15;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  &__bottom-line {
+    display: flex;
+    justify-content: space-between;
+    color: @grey-dark;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  &__description {
+    margin-bottom: 15px;
+  }
+  &__banners {
+    display: flex;
+    &-item {
+      width: 120px;
+      height: 40px;
+      background-color: @grey-dark;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+  
 }
