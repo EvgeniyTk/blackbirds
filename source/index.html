@@ -7,9 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>BlackBirds</title>
-  <script type="text/javascript"
-    src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=_ZzH-fwlS50lTOvg2k-GfW_ryI3jQRsIsNqBLRpM86NCvOmsbjYHZyQue64um6-AanjB2Prw1bdaDvbBlMhg2kE_eR_bmm2wRV7B2074gju70-QIIMtUZo9TOvrL58Zh-rqa-yOQwp7NP8eP_VuiAS94RTEBg1EUX_d1JO6V36wWKneH3ix6FLA0Cgcs-9KPuFia4LTy7SD6HHfli-wd39grpLqHFZl7hwc09YDGMX1XygFumr0FjVLXMCNtvXFHcDZm5RhynyV-0h7xGIjIqFl8tnd1XpdJboolXa6QGisSUX4Po8qXCcw3QkDwTEuoA04Lmcw2JZvoI5QMhEtzK6Ho-JDq1V-ckJ4ke0bM6Qq-tkulCO1e6n507Tc5hep4BqJozwmEyoNTPE0zdIyVNLZfo57cw9mpAmPnJZ5hBKR5ixAYLLlB4EtnqcEoXglHrx4QWnCqfUYLqOrns0KQCYbWF9CcDebnd5MguvL49LOfpwqoJJoxMJmLW3tY8XP_A2fW0eCK9nM256njsG31_jU22VJvCWKrsoMEs9SUTSsaCSzMeiEPr1g8JxVXs1UDAjpXVq5CQz1QaYlXrex75Of3J1jigoucmTCxgSyuxqOJZ1TGWJwAfsI9LlOFRZnwOuxe-PQkJT-t5703VXr6sG06krqvWyVwOrmyBYIMIcvzHfrGS-D87l07VtCrtciyq3zZkQxHJWEx9u5B6QRIh71978qatyx08DWCXPXjTOGdiekXLSs7-1wVmHAXzmodd_GyLtDSYahaj7vo5oXtdYbtAp_MIfmbLgVx_E4fm1qf6J8K84uAMsdjYkKqWlkj5tNCkvCWO6niwmE1swZrELUgV6aMK9RzuyRt7eY66pVnYIugmek_TDl43R2mPgqEXlfyt3QYrtoYYAzkGFZgWkcTMqSN0MkzKEvn53qI6ulzt4f4vsExGJMA1w6CszoustJHQZg7oZLLjz_rrQCZvH78X6J6IcDemr_TmeN0YE_dXWwOr8lzn1jlnf5VPWNLURywtnf6T_QzJF4K6DbxYPMziKRXxIZOHQL0M4wcDCg2TnZDtGYf3yTnc5ROt4QxCfmphwdXdYY42rcM18p9KVqlDCFGDZhOqeeyK_g8W_r3jpRXxj-azb2tN_8_Z_w-hezP1qMT6odMhjYy8QhiUoemSTvWTLO7Dolnwt4m30rXFQ-YEZzWD_lu0wLmzzFVTtX9tqgUVNw3bWgZZrPqOoR37rA1DnJrm2yhmzA3l3wE_Mn_2cddVyXwy9nl1Zv3nrdbZACFRRsDA_r3ztTsSzNjwt6nN9Z3oDxgedRoXnwv6tRq7IXuHzBSyXsXDlja660E0fza7Zx1KLc51ybZsK0oy-GM9Ug0Q8j7fsFNIbUBpj17TyrkPyCxIRoi0byU"
-    nonce="2faf09c67168b45088b79bee4468d1a0" charset="UTF-8"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // инициализация слайдера
+      var slider = new ItcSimpleSlider('.itcss', {
+        loop: true,
+        autoplay: true,
+        swipe: true
+      });
+    });
+  </script>
 </head>
 
 <body class="page__body">
@@ -337,71 +344,68 @@
             <button class="button__auth button">Личный кабинет</button>
           </div>
 
-          <section class="page-header__slider slider">
-            <div class="slider__controls">
-              <button class="slider__controls-button" type="button"></button>
-              <button class="slider__controls-button slider__controls-button--active" type="button"></button>
-              <button class="slider__controls-button" type="button"></button>
-              <button class="slider__controls-button" type="button"></button>
-            </div>
+          <section class="page-header__slider slider itcss">
+            <div class="itcss__wrapper">
+              <div class="itcss__items">
+                <div class="slider__slide  itcss__item slider__slide--active">
+                  <img src="img/slide.png" alt="">
+                  <div class="slider__slide-buttons">
+                    <button class="slider__slide-button button">Смотреть</button>
+                    <a href="" class="slider__link">
+                      <svg height="25" viewBox="0 -77 512.00213 512" width="35" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m501.453125 56.09375c-5.902344-21.933594-23.195313-39.222656-45.125-45.128906-40.066406-10.964844-200.332031-10.964844-200.332031-10.964844s-160.261719 0-200.328125 10.546875c-21.507813 5.902344-39.222657 23.617187-45.125 45.546875-10.542969 40.0625-10.542969 123.148438-10.542969 123.148438s0 83.503906 10.542969 123.148437c5.90625 21.929687 23.195312 39.222656 45.128906 45.128906 40.484375 10.964844 200.328125 10.964844 200.328125 10.964844s160.261719 0 200.328125-10.546875c21.933594-5.902344 39.222656-23.195312 45.128906-45.125 10.542969-40.066406 10.542969-123.148438 10.542969-123.148438s.421875-83.507812-10.546875-123.570312zm0 0"
+                          fill="#414141" />
+                        <path d="m204.96875 256 133.269531-76.757812-133.269531-76.757813zm0 0" fill="#232323" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
 
-            <div class="slider__slide">
-              <img src="img/slide.png" alt="">
-              <div class="slider__slide-buttons">
-                <button class="slider__slide-button button">Смотреть</button>
-                <a href="" class="slider__link">
-                  <svg height="25" viewBox="0 -77 512.00213 512" width="35" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="m501.453125 56.09375c-5.902344-21.933594-23.195313-39.222656-45.125-45.128906-40.066406-10.964844-200.332031-10.964844-200.332031-10.964844s-160.261719 0-200.328125 10.546875c-21.507813 5.902344-39.222657 23.617187-45.125 45.546875-10.542969 40.0625-10.542969 123.148438-10.542969 123.148438s0 83.503906 10.542969 123.148437c5.90625 21.929687 23.195312 39.222656 45.128906 45.128906 40.484375 10.964844 200.328125 10.964844 200.328125 10.964844s160.261719 0 200.328125-10.546875c21.933594-5.902344 39.222656-23.195312 45.128906-45.125 10.542969-40.066406 10.542969-123.148438 10.542969-123.148438s.421875-83.507812-10.546875-123.570312zm0 0"
-                      fill="#414141" />
-                    <path d="m204.96875 256 133.269531-76.757812-133.269531-76.757813zm0 0" fill="#232323" />
-                  </svg>
-                </a>
-              </div>
-            </div>
+                <div class="slider__slide slider__slide--active itcss__item">
+                  <img src="img/slide.png" alt="">
+                  <div class="slider__slide-buttons">
+                    <button class="slider__slide-button button">Смотреть</button>
+                    <a href="" class="slider__link">
+                      <svg height="25" viewBox="0 -77 512.00213 512" width="35" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m501.453125 56.09375c-5.902344-21.933594-23.195313-39.222656-45.125-45.128906-40.066406-10.964844-200.332031-10.964844-200.332031-10.964844s-160.261719 0-200.328125 10.546875c-21.507813 5.902344-39.222657 23.617187-45.125 45.546875-10.542969 40.0625-10.542969 123.148438-10.542969 123.148438s0 83.503906 10.542969 123.148437c5.90625 21.929687 23.195312 39.222656 45.128906 45.128906 40.484375 10.964844 200.328125 10.964844 200.328125 10.964844s160.261719 0 200.328125-10.546875c21.933594-5.902344 39.222656-23.195312 45.128906-45.125 10.542969-40.066406 10.542969-123.148438 10.542969-123.148438s.421875-83.507812-10.546875-123.570312zm0 0"
+                          fill="#414141" />
+                        <path d="m204.96875 256 133.269531-76.757812-133.269531-76.757813zm0 0" fill="#232323" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
 
-            <div class="slider__slide slider__slide--active">
-              <img src="img/slide.png" alt="">
-              <div class="slider__slide-buttons">
-                <button class="slider__slide-button button">Смотреть</button>
-                <a href="" class="slider__link">
-                  <svg height="25" viewBox="0 -77 512.00213 512" width="35" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="m501.453125 56.09375c-5.902344-21.933594-23.195313-39.222656-45.125-45.128906-40.066406-10.964844-200.332031-10.964844-200.332031-10.964844s-160.261719 0-200.328125 10.546875c-21.507813 5.902344-39.222657 23.617187-45.125 45.546875-10.542969 40.0625-10.542969 123.148438-10.542969 123.148438s0 83.503906 10.542969 123.148437c5.90625 21.929687 23.195312 39.222656 45.128906 45.128906 40.484375 10.964844 200.328125 10.964844 200.328125 10.964844s160.261719 0 200.328125-10.546875c21.933594-5.902344 39.222656-23.195312 45.128906-45.125 10.542969-40.066406 10.542969-123.148438 10.542969-123.148438s.421875-83.507812-10.546875-123.570312zm0 0"
-                      fill="#414141" />
-                    <path d="m204.96875 256 133.269531-76.757812-133.269531-76.757813zm0 0" fill="#232323" />
-                  </svg>
-                </a>
-              </div>
-            </div>
+                <div class="slider__slide  itcss__item slider__slide--active">
+                  <img src="img/slide.png" alt="">
+                  <div class="slider__slide-buttons">
+                    <button class="slider__slide-button button">Смотреть</button>
+                    <a href="" class="slider__link">
+                      <svg height="25" viewBox="0 -77 512.00213 512" width="35" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m501.453125 56.09375c-5.902344-21.933594-23.195313-39.222656-45.125-45.128906-40.066406-10.964844-200.332031-10.964844-200.332031-10.964844s-160.261719 0-200.328125 10.546875c-21.507813 5.902344-39.222657 23.617187-45.125 45.546875-10.542969 40.0625-10.542969 123.148438-10.542969 123.148438s0 83.503906 10.542969 123.148437c5.90625 21.929687 23.195312 39.222656 45.128906 45.128906 40.484375 10.964844 200.328125 10.964844 200.328125 10.964844s160.261719 0 200.328125-10.546875c21.933594-5.902344 39.222656-23.195312 45.128906-45.125 10.542969-40.066406 10.542969-123.148438 10.542969-123.148438s.421875-83.507812-10.546875-123.570312zm0 0"
+                          fill="#414141" />
+                        <path d="m204.96875 256 133.269531-76.757812-133.269531-76.757813zm0 0" fill="#232323" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
 
-            <div class="slider__slide">
-              <img src="img/slide.png" alt="">
-              <div class="slider__slide-buttons">
-                <button class="slider__slide-button button">Смотреть</button>
-                <a href="" class="slider__link">
-                  <svg height="25" viewBox="0 -77 512.00213 512" width="35" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="m501.453125 56.09375c-5.902344-21.933594-23.195313-39.222656-45.125-45.128906-40.066406-10.964844-200.332031-10.964844-200.332031-10.964844s-160.261719 0-200.328125 10.546875c-21.507813 5.902344-39.222657 23.617187-45.125 45.546875-10.542969 40.0625-10.542969 123.148438-10.542969 123.148438s0 83.503906 10.542969 123.148437c5.90625 21.929687 23.195312 39.222656 45.128906 45.128906 40.484375 10.964844 200.328125 10.964844 200.328125 10.964844s160.261719 0 200.328125-10.546875c21.933594-5.902344 39.222656-23.195312 45.128906-45.125 10.542969-40.066406 10.542969-123.148438 10.542969-123.148438s.421875-83.507812-10.546875-123.570312zm0 0"
-                      fill="#414141" />
-                    <path d="m204.96875 256 133.269531-76.757812-133.269531-76.757813zm0 0" fill="#232323" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <div class="slider__slide">
-              <img src="img/slide.png" alt="">
-              <div class="slider__slide-buttons">
-                <button class="slider__slide-button button">Смотреть</button>
-                <a href="" class="slider__link">
-                  <svg height="25" viewBox="0 -77 512.00213 512" width="35" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="m501.453125 56.09375c-5.902344-21.933594-23.195313-39.222656-45.125-45.128906-40.066406-10.964844-200.332031-10.964844-200.332031-10.964844s-160.261719 0-200.328125 10.546875c-21.507813 5.902344-39.222657 23.617187-45.125 45.546875-10.542969 40.0625-10.542969 123.148438-10.542969 123.148438s0 83.503906 10.542969 123.148437c5.90625 21.929687 23.195312 39.222656 45.128906 45.128906 40.484375 10.964844 200.328125 10.964844 200.328125 10.964844s160.261719 0 200.328125-10.546875c21.933594-5.902344 39.222656-23.195312 45.128906-45.125 10.542969-40.066406 10.542969-123.148438 10.542969-123.148438s.421875-83.507812-10.546875-123.570312zm0 0"
-                      fill="#414141" />
-                    <path d="m204.96875 256 133.269531-76.757812-133.269531-76.757813zm0 0" fill="#232323" />
-                  </svg>
-                </a>
+                <div class="slider__slide  itcss__item slider__slide--active">
+                  <img src="img/slide.png" alt="">
+                  <div class="slider__slide-buttons">
+                    <button class="slider__slide-button button">Смотреть</button>
+                    <a href="" class="slider__link">
+                      <svg height="25" viewBox="0 -77 512.00213 512" width="35" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m501.453125 56.09375c-5.902344-21.933594-23.195313-39.222656-45.125-45.128906-40.066406-10.964844-200.332031-10.964844-200.332031-10.964844s-160.261719 0-200.328125 10.546875c-21.507813 5.902344-39.222657 23.617187-45.125 45.546875-10.542969 40.0625-10.542969 123.148438-10.542969 123.148438s0 83.503906 10.542969 123.148437c5.90625 21.929687 23.195312 39.222656 45.128906 45.128906 40.484375 10.964844 200.328125 10.964844 200.328125 10.964844s160.261719 0 200.328125-10.546875c21.933594-5.902344 39.222656-23.195312 45.128906-45.125 10.542969-40.066406 10.542969-123.148438 10.542969-123.148438s.421875-83.507812-10.546875-123.570312zm0 0"
+                          fill="#414141" />
+                        <path d="m204.96875 256 133.269531-76.757812-133.269531-76.757813zm0 0" fill="#232323" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -738,6 +742,7 @@
       </ul>
     </div>
   </footer>
+  <script defer src="js/simple-adaptive-slider.min.js"></script>
 </body>
 
 </html>
