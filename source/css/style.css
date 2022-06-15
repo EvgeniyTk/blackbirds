@@ -214,6 +214,13 @@ ul {
   font-weight: 400;
   background-color: #232323;
 }
+.page__body {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 .page__body-wrapper {
   margin: 0 auto;
   max-width: 1200px;
@@ -224,7 +231,7 @@ ul {
   margin-bottom: 46px;
 }
 .body-wrapper__menu {
-  width: 285px;
+  min-width: 285px;
 }
 .body-wrapper__content {
   min-width: 865px;
@@ -725,8 +732,9 @@ ul {
   height: 48px;
 }
 .footer {
-  margin: 0 auto;
-  max-width: 1200px;
+  margin: 0 0 0 auto;
+  width: 1160px;
+  flex: 1 1 auto;
   padding: 0 25px;
 }
 .footer__top-line {
