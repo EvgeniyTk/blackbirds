@@ -1,0 +1,111 @@
+.popup-auth {
+  position: absolute;
+  width: 800px;
+  height: 540px;
+  top: 0;
+  right: 0;
+  background:  @background-block url("/img/register-form.png") no-repeat 480px 0px;
+  z-index: 2;
+  padding: 30px 40px;
+  &__header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: @silver;
+    grid-column: 1 / 2;
+  }
+  &__button-register {
+    padding: 10px 15px;
+    width: 170px;
+    height: 40px;
+    background-color: @grey-dark;
+    color: @grey;
+    grid-column: 2 / 3;
+    &:hover {
+      background: @button-forum;
+    }
+  }
+  &__form {
+    width: 400px;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 190px 190px;
+    grid-row-gap: 20px;
+    grid-template-rows: 60px 70px 70px 70px 95px 10px;
+  }
+  &__label {
+    display: block;
+    color: @grey-dark;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    &-login {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    &-pass {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    &-code {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+    }
+  & input {
+    margin-top: 8px;
+    display: block;
+    background-color: @grey-dark;
+    border: none;
+    height: 40px;
+    width: 380px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    color: @grey;
+    font-size: 16px;
+  }
+  & #code-in {
+    width: 190px;
+  }
+  &__code {
+    width: 170px;
+    height: 65px;
+    background-color: @grey;
+  }
+  &__button-in {
+    width: 190px;
+    height: 40px;
+    grid-row: 5 / 6;
+  }
+  &__pass-link {
+    color: @grey-dark;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 300;
+    width: 125px;
+    margin: 0 10px 0 auto;
+    &:hover {
+      color: @grey;
+    }
+  }
+  &__security-link {
+    color: @grey-dark;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    &:hover {
+      color: @grey;
+    }
+  }
+  
+}

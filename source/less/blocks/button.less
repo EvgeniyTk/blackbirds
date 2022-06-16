@@ -37,8 +37,12 @@
       top: -4px;
       right: -2px;
     }
-    &--active:hover svg{
-      transform: rotate(45deg);
+    &--active:hover {
+      svg {
+      animation-duration: 0.5s;
+      animation-name: slidein;
+      animation-iteration-count: infinite;
+      }
     }
     & svg {
       margin: auto;

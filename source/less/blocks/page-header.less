@@ -1,6 +1,7 @@
 .page-header {
   width: 800px;
   margin: 0 auto 35px;
+  position: relative;
   &__top {
     margin-bottom:35px;
     display: flex;
@@ -14,5 +15,51 @@
   &__servers-item:not(:last-child) {
     margin-right: 20px;
   }
-  
+  &__notifications {
+    display: none;
+    position: absolute;
+    width: 340px;
+    height: 215px;
+    top: 61px;
+    z-index: 1;
+    right: 207px;
+    border: 2px solid @orange;
+    background-color: @line;
+    padding-top: 10px;
+    &-link {
+      display: block;
+      color: @orange;
+      font-weight: 500;
+      text-align: center;
+      padding: 15px 110px;
+      font-size: 14px;
+      &:hover {
+        filter: brightness(1.3);
+      }
+    }
+  }
+  &__notifications--active {
+    display: block;
+  }
+  &__notification {
+    margin: 0 auto;
+    position: relative;
+    width: 318px;
+    border-bottom: 1px solid @grey-dark;
+    padding: 12px 40px;
+    color: @grey;
+    font: inherit;
+    line-height: 14px;
+    padding-bottom: 10px;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      border-radius: 3px;
+      background-color: red;
+      left: 10px;
+      top: 14px;
+    }
+  }
 }
