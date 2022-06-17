@@ -5,11 +5,18 @@
   font-weight: 400;
   background-color: @background-grey;
   &__body {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: scroll;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__body-wrapper {
     margin: 0 auto;
